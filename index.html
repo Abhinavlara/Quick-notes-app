@@ -1,0 +1,32 @@
+
+
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quick Notes | Welcome</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container welcome">
+    <h1 class="title">📝 Quick Notes</h1>
+    <p class="subtitle">Your personal space for quick thoughts & ideas</p>
+    <input type="text" id="username" placeholder="Enter your name to begin..." />
+    <button onclick="startNotes()">Start Writing</button>
+  </div>
+  <script>
+    function startNotes() {
+      const name = document.getElementById('username').value.trim();
+      if (name) {
+        localStorage.setItem('quicknotes_username', name);
+        window.location.href = 'notes.html';
+      } else {
+        alert("Please enter your name");
+      }
+    }
+  </script>
+</body>
+</html>

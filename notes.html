@@ -1,0 +1,30 @@
+
+<!-- notes.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quick Notes | Your Notes</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <div class="nav-brand">📝 Quick Notes</div>
+    <button onclick="logout()">Logout</button>
+  </nav>
+
+  <div class="container notes">
+    <h2 id="welcome"></h2>
+    <textarea id="noteInput" placeholder="Write your thoughts..."></textarea>
+    <div class="buttons">
+      <button onclick="saveNote()">➕ Add Note</button>
+      <button onclick="clearNotes()" class="danger">🗑️ Clear All</button>
+    </div>
+    <div id="notesList" class="notes-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
