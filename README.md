@@ -13,3 +13,5 @@
 - HTML
 - CSS
 - JavaScript
+## Live Demo
+- [Click to here live view ]( https://abhinavlara.github.io/Quick-notes-app/)
